@@ -65,5 +65,8 @@ def get(name: str):
         **params,
         **get_common_cf_template_params(),
     }
+    params.pop('time')
+    params.pop('ray_id')
+    params.pop('client_ip')
     # TODO: cache
     return render_cf_error_page(params=params, allow_html=False, use_cdn=True, show_creator=True), 200
