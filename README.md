@@ -56,8 +56,6 @@ You can also see this example [here](https://virt.moe/cloudflare-error-page/exam
 
 ### Catastrophic infrastructure failure
 
-See this example [here](https://virt.moe/cloudflare-error-page/examples/catastrophic).
-
 ``` JavaScript
 params = {
     "title": "Catastrophic infrastructure failure",
@@ -89,11 +87,12 @@ params = {
 }
 ```
 
-![Catastrophic infrastructure failure](doc/example.png)
+See this example [here](https://virt.moe/cloudflare-error-page/examples/catastrophic).
+
+
+![Catastrophic infrastructure failure](https://github.com/donlon/cloudflare-error-page/blob/images/example.png?raw=true)
 
 ### Web server is working
-
-See this example [here](https://virt.moe/cloudflare-error-page/examples/working).
 
 ``` JavaScript
 params = {
@@ -113,7 +112,7 @@ params = {
     "host_status": {
         "status": "ok",
         "location": "example.com",
-        "status_text": "Just Working",
+        "status_text": "Almost Working",
     },
     "error_source": "host",
     "what_happened": "<p>This site is still working. And it looks great.</p>",
@@ -121,7 +120,9 @@ params = {
 }
 ```
 
-![Web server is working](doc/example2.png)
+See this example [here](https://virt.moe/cloudflare-error-page/examples/working).
+
+![Web server is working](https://github.com/donlon/cloudflare-error-page/blob/images/example2.png?raw=true)
 
 ### Using Flask server
 

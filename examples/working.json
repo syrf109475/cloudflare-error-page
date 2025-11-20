@@ -15,7 +15,7 @@
     "host_status": {
         "status": "ok",
         "location": "example.com",
-        "status_text": "Just Working"
+        "status_text": "Almost Working"
     },
     "error_source": "host",
     "what_happened": "<p>This site is still working. And it looks great.</p>",
