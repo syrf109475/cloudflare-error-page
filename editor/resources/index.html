@@ -313,6 +313,9 @@
         cfg.time = formatUtcTimestamp()
         cfg.ray_id = '0123456789abcdef'
         cfg.client_ip = '1.1.1.1'
+        if (Number.isNaN(Number(cfg.error_code))) {
+          cfg.html_title = cfg.title || 'Internal server error'
+        }
 
         let pageHtml = renderEjs(cfg)
         // Write into iframe
