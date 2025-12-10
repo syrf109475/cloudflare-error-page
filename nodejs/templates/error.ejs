@@ -97,7 +97,7 @@
                 <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="<%= perf_sec_by.link || 'https://www.cloudflare.com/' %>" id="brand_link" target="_blank"><%= perf_sec_by.text || 'Cloudflare' %></a></span>
 
                 <% const creator_info = params.creator_info || {}; %>
-                <% if (!creator_info.hidden) { %>
+                <% if (!(creator_info.hidden ?? true)) { %>
                 <span class="cf-footer-separator sm:hidden">&bull;</span>
                 <span class="cf-footer-item sm:block sm:mb-1">Created with <a href="<%= creator_info.link %>" target="_blank"><%= creator_info.text %></a></span>
                 <% } %>
