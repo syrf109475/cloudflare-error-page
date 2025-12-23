@@ -284,7 +284,7 @@ function readConfig() {
 }
 
 function renderEjs(params) {
-  return render_cf_error_page(params);
+  return render_cf_error_page(params, false);
 }
 
 /* Basic render: build HTML string from config and put into iframe.srcdoc */
